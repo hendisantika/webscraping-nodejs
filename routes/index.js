@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const getResults = require("../scraper");
+const getResults = require("../index");
 /* GET home page. */
 router.get("/", async function (req, res, next) {
     const result = await getResults();
